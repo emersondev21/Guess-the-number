@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background-color: purple;
+  border-radius: 20px;
+  gap: 2rem;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.userInput {
+  height: 36px;
+  border: none;
+  outline: none;
+  border-radius: 16px;
+  padding: 0 20px;
+  font-size: 15px;
+}
+
+button {
+  border: none;
+  height: 40px;
+  width: 100px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.btnBox {
+  display: flex;
+  justify-content: space-around;
+}
+
+#btnRetry {
+  visibility: hidden;
+}

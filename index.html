@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Guess the number</title>
+</head>
+<body>
+  <main class="container">
+    <h1>Guess the number 0-10</h1>
+    <div class="input-box" id="input-box">
+      <input type="number" name="" class="userInput" id="userInput">
+      <div class="btnBox">
+        <button class="btnGuess" id="btnGuess" onclick="guess()">Guess</button>
+        <button class="btnRetry" id="btnRetry" onclick="retry()">Retry</button>
+      </div>
+    </div>
+    <p class="result" id="result"></p>
+    <p class="numberCorrect" id="numberCorrect"></p>
+  </main>
+</body>
+<script src="assets/scripts/script.js"></script>
+</html>
