@@ -2,7 +2,9 @@ const results = document.getElementById('result')
 const numberCorrect = document.getElementById('numberCorrect')
 const userInput = document.getElementById('userInput')
 const btnRetry = document.getElementById('btnRetry')
-const jsConfetti = new JSConfetti({
+
+// Configurando efeito de comemoração
+const congratEffect = new JSConfetti({
   emojis: ['🌈', '⚡️', '💥', '✨', '💫', '🌸'],
 })
 
@@ -24,7 +26,7 @@ function guess() {
   if (userGuess === numeroAleatorio) {
     results.textContent = "CONGRATULATIONS, YOU WIN!!!"
     btnRetry.style.visibility = "visible"
-    jsConfetti.addConfetti()
+    congratEffect.addConfetti()
   } else {
     results.textContent = "Incorrect number '-'"
     userGuess.textContent = ""
