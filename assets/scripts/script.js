@@ -8,7 +8,7 @@ let numeroAleatorio; // Declare a variável globalmente
 generateNumber()
 
 function generateNumber() {
-  numeroAleatorio = Math.floor(Math.random() * 101); // O intervalo é de 0 a 100
+  numeroAleatorio = Math.floor(Math.random() * 11); // O intervalo é de 0 a 100
   console.log(numeroAleatorio);
   btnRetry.style.visibility = "hidden"
   results.textContent = ""
@@ -19,11 +19,10 @@ function guess() {
   const userGuess = parseInt(userInput.value); // Converter entrada do usuário para número
   
   if (userGuess === numeroAleatorio) {
-    results.textContent = "Parabéns, você acertou!"
+    results.textContent = "CONGRATULATIONS, YOU WIN!!!"
     btnRetry.style.visibility = "visible"
-    numberCorrect.textContent = numeroAleatorio
   } else {
-    results.textContent = "Número incorreto, tente novamente"
+    results.textContent = "Incorrect number '-'"
     userGuess.textContent = ""
   }
 }

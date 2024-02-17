@@ -1,48 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
+  font-family: "Press Start 2P", system-ui;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: #40407a;
 }
 
 .container {
+  height: 365px;
+  width: 510px;
   display: flex;
   flex-direction: column;
   padding: 50px;
-  background-color: purple;
-  border-radius: 20px;
+  background-color: #706fd3;
+  /* border-radius: 20px; */
   gap: 2rem;
+  border: 3px solid black;
+  box-shadow: 5px 5px black;
+}
+
+h1 {
+  font-size: 25px;
 }
 
 .input-box {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  
 }
 
 .userInput {
   height: 36px;
-  border: none;
   outline: none;
-  border-radius: 16px;
   padding: 0 20px;
-  font-size: 15px;
+  font-size: 15px;border: 3px solid black;
+  box-shadow: 5px 5px black;
 }
 
 button {
-  border: none;
-  height: 40px;
-  width: 100px;
-  border-radius: 16px;
+  padding: 10px 20px;
+  border: 3px solid black;
+  box-shadow: 5px 5px black;
+  transition: 0.25s;
+  font-weight: bolder;
   cursor: pointer;
+}
+
+button:active {
+  box-shadow: 0px 0px black;
+  transform: translate(5px, 5px);
 }
 
 .btnBox {
@@ -52,4 +69,11 @@ button {
 
 #btnRetry {
   visibility: hidden;
+}
+
+/* oculta as setinhas da entrada de números */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 20px;
 }
